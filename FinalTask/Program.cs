@@ -104,8 +104,8 @@ namespace FinalTask
                 {
                     foreach (var student in group.Value)
                     {
-                        writer.WriteLine(student.Name);
-                        writer.WriteLine(student.DateOfBirth);
+                        writer.Write(student.Name);
+                        writer.WriteLine($" {student.DateOfBirth.ToString("yyyy-MM-dd")}");
                     }
                 }
             }
